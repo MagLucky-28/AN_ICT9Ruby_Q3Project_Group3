@@ -1,0 +1,315 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #fbf6f3;
+}
+
+.nav {
+    background: #265061;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px 40px;
+    color: #fbf6f3;
+}
+
+.nav-right a {
+    color: #fbf6f3;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    opacity: 0.9;
+    transition: all 0.3s;
+}
+
+.nav-right a:hover {
+    opacity: 1;
+}
+
+.hero-bg {
+    background: url("banner.png") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 0 20px;
+    height: calc(100vh - 250px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.calc-section {
+    background: #265061;
+    color: #fbf6f3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 70px;
+    flex-wrap: wrap;
+}
+
+.calc-section h1 {
+    font-size: 60px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.start-btn {
+    background: #fbf6f3;
+    color: #265061;
+    padding: 20px 40px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.start-btn:hover {
+    transform: scale(1.05);
+}
+
+.fare-container {
+    text-align: center;
+    padding: 40px 20px;
+    display: none;
+    overflow: hidden;
+}
+
+.fare-container h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #265061;
+    font-family: 'Anton', sans-serif;
+}
+
+.map {
+    width: 360px;
+    border-radius: 12px;
+    margin: 20px 0 30px;
+}
+
+.box {
+    background: #265061;
+    width: 380px;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    color: #fbf6f3;
+}
+
+.box label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+select {
+    width: 100%;
+    padding: 16px;
+    border-radius: 20px;
+    border: none;
+    background: #fbf6f3;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.lrt-buttons button,
+.discount-buttons button,
+.calc-btn {
+    background: #fbf6f3;
+    color: #265061;
+    border: none;
+    padding: 14px 26px;
+    margin: 6px 4px;
+    border-radius: 22px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.lrt-buttons button:hover,
+.discount-buttons button:hover,
+.calc-btn:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+}
+
+.selected-btn {
+    background: #2f5d67;
+    color: #fbf6f3;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    transform: translateY(-2px);
+}
+
+.calc-btn {
+    margin-top: 20px;
+    font-size: 16px;
+    width: 220px;
+    background: #265061;
+    color: #fbf6f3;
+}
+
+.calc-btn:hover {
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    transform: translateY(-2px);
+}
+.register-box,
+.confirm-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.profile-part {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.check-area {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.check-area input {
+  width: auto;
+}
+
+.result{
+    font-size: 25px;
+    font-weight: 600;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav {
+    background: #265061;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px 40px;
+    color: #fbf6f3;
+}
+
+.nav-right a {
+    color: #fbf6f3;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    opacity: 0.9;
+    transition: all 0.3s;
+}
+
+.nav-right a:hover {
+    opacity: 1;
+}
+
+.logo {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px 0;
+  opacity: 90%;
+}
+
+.main-icon {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button,
+.home-btn,
+.cancel-btn {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #265061;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover,
+.home-btn:hover,
+.cancel-btn:hover {
+  background-color: #265061;
+}
+
+.register-box,
+.confirm-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.profile-part {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.check-area {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.check-area input {
+  width: auto;
+}
+
+.footer {
+    background: #265061;
+    color: #fbf6f3;
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
+    margin-top: 30px;
+}

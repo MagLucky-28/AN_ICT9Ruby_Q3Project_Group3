@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lakbay LRT</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Imbue:opsz,wght@10..100,100..900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav">
+    <div class="nav-right">
+        <a href="#">Home</a>
+        <a href="#fare">Fare Matrix</a>
+        <a href="#">Schedule</a>
+        <a href="#">Help</a>
+        <a href="registration.html">Create Account</a>
+    </div>
+</div>
+<div class="hero-bg"></div>
+
+<div class="calc-section">
+    <h1>Calculate<br>Your next move.</h1>
+    <div class="start-btn" onclick="showFare()">START YOUR JOURNEY HERE</div>
+</div>
+
+<div class="fare-container" id="fare-lrt1">
+    <h2>FARE MATRIX LRT-1</h2>
+    <img src="map.png" class="map">
+    <div class="box">
+        <label>Choose LRT:</label>
+        <div class="lrt-buttons">
+            <button onclick="selectLine(this, 'lrt1')">LRT-1</button>
+            <button onclick="selectLine(this, 'lrt2')">LRT-2</button>
+            <button onclick="selectLine(this, 'lrt3')">LRT-3</button>
+        </div>
+    </div>
+    <div class="box">
+        <h3>Roosevelt – Baclaran</h3>
+        <label>Pick Up Location:</label>
+        <select id="pickup-lrt1"></select>
+        <label>Drop Off Location:</label>
+        <select id="dropoff-lrt1"></select>
+    </div>
+    <div class="box">
+        <label>Choose Discount Type:</label>
+        <div class="discount-buttons">
+            <button onclick="selectDiscount(this, 'regular')">Regular</button>
+            <button onclick="selectDiscount(this, 'discount')">Senior</button>
+            <button onclick="selectDiscount(this, 'discount')">Student</button>
+            <button onclick="selectDiscount(this, 'discount')">PWD</button>
+        </div>
+        <p style="font-size:12px;margin-top:10px;">
+            Senior Citizens, Students, and PWDs are subject to a 50% discount upon verification of valid ID.
+        </p>
+    </div>
+    <button class="calc-btn" onclick="computeFare('lrt1')">Calculate Fare</button>
+    <div class="result">
+        ₱<span id="fareOutput-lrt1">0.00</span> | <span id="distanceOutput-lrt1">0.0</span> KM
+    </div>
+</div>
+
+<div class="fare-container" id="fare-lrt2">
+    <h2>FARE MATRIX LRT-2</h2>
+    <img src="map.png" class="map">
+    <div class="box">
+        <label>Choose LRT:</label>
+        <div class="lrt-buttons">
+            <button onclick="selectLine(this, 'lrt1')">LRT-1</button>
+            <button onclick="selectLine(this, 'lrt2')">LRT-2</button>
+            <button onclick="selectLine(this, 'lrt3')">LRT-3</button>
+        </div>
+    </div>
+    <div class="box">
+        <h3>Santolan – Recto</h3>
+        <label>Pick Up Location:</label>
+        <select id="pickup-lrt2"></select>
+        <label>Drop Off Location:</label>
+        <select id="dropoff-lrt2"></select>
+    </div>
+    <div class="box">
+        <label>Choose Discount Type:</label>
+        <div class="discount-buttons">
+            <button onclick="selectDiscount(this, 'regular')">Regular</button>
+            <button onclick="selectDiscount(this, 'discount')">Senior</button>
+            <button onclick="selectDiscount(this, 'discount')">Student</button>
+            <button onclick="selectDiscount(this, 'discount')">PWD</button>
+        </div>
+        <p style="font-size:12px;margin-top:10px;">
+            Senior Citizens, Students, and PWDs are subject to a 50% discount upon verification of valid ID.
+        </p>
+    </div>
+    <button class="calc-btn" onclick="computeFare('lrt2')">Calculate Fare</button>
+    <div class="result">
+        ₱<span id="fareOutput-lrt2">0.00</span> | <span id="distanceOutput-lrt2">0.0</span> KM
+    </div>
+</div>
+
+<div class="fare-container" id="fare-lrt3">
+    <h2>FARE MATRIX LRT-3</h2>
+    <img src="map.png" class="map">
+    <div class="box">
+        <label>Choose LRT:</label>
+        <div class="lrt-buttons">
+            <button onclick="selectLine(this, 'lrt1')">LRT-1</button>
+            <button onclick="selectLine(this, 'lrt2')">LRT-2</button>
+            <button onclick="selectLine(this, 'lrt3')">LRT-3</button>
+        </div>
+    </div>
+    <div class="box">
+        <h3>North Avenue – Taft Avenue</h3>
+        <label>Pick Up Location:</label>
+        <select id="pickup-lrt3"></select>
+        <label>Drop Off Location:</label>
+        <select id="dropoff-lrt3"></select>
+    </div>
+    <div class="box">
+        <label>Choose Discount Type:</label>
+        <div class="discount-buttons">
+            <button onclick="selectDiscount(this, 'regular')">Regular</button>
+            <button onclick="selectDiscount(this, 'discount')">Senior</button>
+            <button onclick="selectDiscount(this, 'discount')">Student</button>
+            <button onclick="selectDiscount(this, 'discount')">PWD</button>
+        </div>
+        <p style="font-size:12px;margin-top:10px;">
+            Senior Citizens, Students, and PWDs are subject to a 20% discount upon verification of valid ID.
+        </p>
+    </div>
+    <button class="calc-btn" onclick="computeFare('lrt3')">Calculate Fare</button>
+    <div class="result">
+        ₱<span id="fareOutput-lrt3">0.00</span> | <span id="distanceOutput-lrt3">0.0</span> KM
+    </div>
+</div>
+
+<div class="footer">
+    Brielle Maglaqui | Antonella Urquico | Lucas Gonzales | 9 Ruby © 2026
+</div>
+
+<script src="proj.js"></script>
+</body>
+</html>

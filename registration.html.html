@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration - Lakbay LRT</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="nav">
+    <div class="nav-left">
+        <img src="logo.png" alt="LRT Logo" class="logo">
+        <span class="brand">Lakbay LRT</span>
+    </div>
+    <div class="nav-right">
+        <a href="#">Home</a>
+        <a href="#fare">Fare Matrix</a>
+        <a href="#">Schedule</a>
+        <a href="#">Help</a>
+        <a href="registration.html">Create Account</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="register-box">
+      <h1>Registration Form</h1>
+
+      <div class="profile-part">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="profile-img" alt="Profile">
+        <input type="file">
+      </div>
+
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName">
+
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName">
+
+      <label for="age">Age</label>
+      <input type="number" id="age">
+
+      <label for="contactNumber">Contact Number</label>
+      <input type="text" id="contactNumber">
+
+      <label for="email">Email</label>
+      <input type="email" id="email">
+
+      <label for="username">Username</label>
+      <input type="text" id="username">
+
+      <label for="password">Password</label>
+      <input type="password" id="password">
+
+      <div class="check-area">
+        <input type="checkbox" id="agreeCheck">
+        <label for="agreeCheck">I accept the terms and privacy policy</label>
+      </div>
+
+      <button onclick="createAccount()">Create My Account</button>
+      <a href="index.html" class="cancel-btn">Cancel</a>
+    </div>
+
+    <div class="footer">
+      Brielle Maglaqui | Grade & Section &copy; 2026
+    </div>
+  </div>
+
+  <script>
+    function createAccount() {
+      alert("Account data submitted!");
+    }
+  </script>
+</body>
+</html>
